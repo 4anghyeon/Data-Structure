@@ -104,6 +104,15 @@ class LinkedList {
             i++;
         }
     }
+
+    contains(value) {
+        let current = this.head;
+        while (current) {
+            if (current.data === value) return true;
+            current = current.next;
+        }
+        return false;
+    }
 }
 let list = new LinkedList();
 list.add("1")
@@ -113,3 +122,5 @@ list.addLast("4")
 list.add("5", 1)
 list.remove(2);
 list.get();
+console.log(list.contains("3"));
+console.log(list.contains("4"));
