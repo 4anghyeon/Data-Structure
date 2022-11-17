@@ -1,4 +1,4 @@
-class Heap {
+class MaxHeap {
     constructor() {
         // 구현의 편의성을 위해 첫 번째 인덱스는 사용하지 않는다.
         this.heap = [null];
@@ -56,7 +56,7 @@ class Heap {
     }
 }
 
-let heap = new Heap();
+let heap = new MaxHeap();
 heap.add(100);
 heap.add(36);
 heap.add(19);
